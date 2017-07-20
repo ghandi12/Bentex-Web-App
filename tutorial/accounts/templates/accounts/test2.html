@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<div class=container>
+	<h1>I'm a header</h1>
+	{% for table in table_data %} 
+		<a href="/account/test_page/{{table.name}}">
+			<button class=code_404 type='submit'>{{table}}
+			<br>
+			</button>
+		</a>
+	{% endfor %}		
+	
+
+	<table>
+	{% for header in ths %}
+	<th>{{header}}<th>
+	{% endfor %}	
+	</table>
+	
+	
+
+</div>
+{% endblock %}
